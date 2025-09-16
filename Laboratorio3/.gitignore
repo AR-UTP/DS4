@@ -1,0 +1,39 @@
+# Archivos y carpetas de Visual Studio
+.vs
+.user
+.suo
+.cache
+.log
+
+# Binarios y builds
+bin
+obj
+Debug
+Release
+x64
+x86
+[Bb]uild
+
+# Configuración local
+.dbmdl
+.jfm
+.pdb
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store
+
+# Archivos de dependencias
+node_modules
+packages
+.nupkg
+
+# Archivos de publicación
+publish
+.Publish.xml
+
+# Archivos temporales
+.tmp
+.bak
+.swp
+.lock
