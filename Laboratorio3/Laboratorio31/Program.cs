@@ -1,32 +1,24 @@
-﻿
-//Ejercicio #1:
-//El usuario debe ingresar dos números y la aplicación consola mostrará
-//el resultado de la operación (a+b)*(a-b). La operación debe estar bajo
-//el método Calcular de la clase CalculosMatemáticos y el programa principal
-//bajo la clase Program.
-
+﻿using Laboratorio31;
 using System;
+internal class Program
 
-class Program
 {
-
     private static void Main(string[] args)
     {
-        Calculos calc = new Calculos();
-        Console.Write("Escriba el número 1: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Escriba el número 2: ");
-        int num2 = Convert.ToInt32(Console.ReadLine());
+        double Numero1, Numero2, Respuesta;
 
-        int resultado = calc.CalculosMatematicos(num1, num2);
-        Console.WriteLine($"El resultado de la operación (a+b)*(a-b) es: {resultado}");
-    }
-}
+        CalculosMatematicos calc = new CalculosMatematicos();
 
-class Calculos()
-{ 
-    public int CalculosMatematicos(int a, int b)
-    {
-        return (a + b) * (a - b);
+        Console.Write("Introduce el primer numero:");
+        Numero1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Introduce el segundo numero:");
+        Numero2 = Convert.ToInt32(Console.ReadLine());
+
+        Respuesta = calc.Calcular(Numero1, Numero2);
+
+        Console.WriteLine("La operacion de ({0}+{1})({0}-{1}) es : {2}", Numero1, Numero2, Respuesta);
     }
+
+
 }
