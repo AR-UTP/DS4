@@ -1,0 +1,15 @@
+﻿
+using Laboratorio72;
+using System;
+
+namespace Laboratorio7
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        { 
+            JuegoDeDados j = new JuegoDeDados();
+            j.Jugar();
+        }
+    }
+}

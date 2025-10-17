@@ -1,0 +1,7 @@
+
+
+- Identificar el patrón de la matriz y replicarla
+- Los valores del patrón identificado son aleatorios entre 1 y 100 (el resto 0)
+- La matriz es debe ser de dimensión NxN
+- N debe ser par, no puede ser matriz impar
+- Calcular la suma de todos los elementos
